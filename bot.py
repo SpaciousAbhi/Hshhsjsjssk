@@ -149,24 +149,59 @@ async def op(_, m: Message):
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import enums
+
 @app.on_callback_query(filters.regex("chk"))
-async def chk(_, cb : CallbackQuery):
+async def chk(_, cb: CallbackQuery):
     try:
         await app.get_chat_member(cfg.CHID, cb.from_user.id)
         if cb.message.chat.type == enums.ChatType.PRIVATE:
+            # Inline keyboard for other links
             keyboard = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton("🗯 Channel", url="https://t.me/Venom_Stone_Movies_Official"),
                         InlineKeyboardButton("💬 Support", url="https://t.me/IAmVenomStone")
-                    ],[
+                    ],
+                    [
                         InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/VenomStoneAutoApproveBot?startgroup")
                     ]
                 ]
             )
+
+            # Caption / explanatory text
+            caption_text = """🎬 Want to download any movie or series?
+
+👉 Steps to download:
+
+1. Click on the group link below and join the group.
+2. Type the name of the movie or series you want to download and send it.
+4. Download the files shared in the group.
+
+✅ It’s very easy! Just follow these steps and get your movies/series.
+
+💥 Available in: 480p, 720p, 1080p, Full HD
+🌐 Languages: Hindi, English, Tamil, Telugu, Kannada, Malayalam"""
+
+            # Inline buttons for the group links
+            group_buttons = InlineKeyboardMarkup(
+                [
+                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
+                ]
+            )
+
             add_user(cb.from_user.id)
-            await cb.message.edit("**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @Venom_Stone_Movies_Official__**".format(cb.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard, disable_web_page_preview=True)
-        print(cb.from_user.first_name +" Is started Your Bot!")
+            # Edit message with new text and inline buttons
+            await cb.message.edit(
+                caption_text,
+                reply_markup=group_buttons,
+                disable_web_page_preview=True
+            )
+
+        print(cb.from_user.first_name + " Is started Your Bot!")
     except UserNotParticipant:
         await cb.answer("🙅‍♂️ You are not joined to channel join and try again. 🙅‍♂️")
 
