@@ -23,18 +23,47 @@ gif = [
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Main process ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+import random
+
 @app.on_chat_join_request(filters.group | filters.channel & ~filters.private)
-async def approve(_, m : Message):
+async def approve(_, m: Message):
     op = m.chat
     kk = m.from_user
     try:
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "**🎬 Want to download any movie or series?\n\n👉 Steps to download:\n\n1. Click on the group link below and join the group.\n2. Type the name of the movie or series you want to download and send it.\n4. Download the files shared in the group.\n\n✅ It’s very easy! Just follow these steps and get your movies/series.\n\nhttps://t.me/+OXGKooMMA_U0Yjg1\nhttps://t.me/+OXGKooMMA_U0Yjg1\nhttps://t.me/+OXGKooMMA_U0Yjg1\n\n💥 Available in: 480p, 720p, 1080p, Full HD\n🌐 Languages: Hindi, English, Tamil, Telugu, Kannada, Malayalam**".format(m.from_user.mention, m.chat.title))
+
+        # Caption text
+        caption_text = """🎬 Want to download any movie or series?
+
+👉 Steps to download:
+
+1. Click on the group link below and join the group.
+2. Type the name of the movie or series you want to download and send it.
+4. Download the files shared in the group.
+
+✅ It’s very easy! Just follow these steps and get your movies/series.
+
+💥 Available in: 480p, 720p, 1080p, Full HD
+🌐 Languages: Hindi, English, Tamil, Telugu, Kannada, Malayalam"""
+
+        # Inline buttons with updated labels
+        buttons = InlineKeyboardMarkup(
+            [
+                [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
+            ]
+        )
+
+        # Send video with caption and buttons
+        await app.send_video(kk.id, img, caption=caption_text, reply_markup=buttons)
+
         add_user(kk.id)
     except Exception as err:
-        print(str(err))    
+        print(str(err))
  
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Start ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
