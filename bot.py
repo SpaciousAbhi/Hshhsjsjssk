@@ -36,25 +36,25 @@ async def approve(_, m: Message):
         img = random.choice(gif)
 
         # Caption text
-        caption_text = """🎬 Want to download any movie or series?
+        caption_text = """🎬 𝗪𝗮𝗻𝘁 𝘁𝗼 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗮𝗻𝘆 𝗺𝗼𝘃𝗶𝗲 𝗼𝗿 𝘀𝗲𝗿𝗶𝗲𝘀?
 
-👉 Steps to download:
+👉 𝗛𝗼𝘄 𝘁𝗼 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱:
 
-1. Click on the group link below and join the group.
-2. Type the name of the movie or series you want to download and send it.
-4. Download the files shared in the group.
+1️⃣ 𝗝𝗼𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽 𝘂𝘀𝗶𝗻𝗴 𝘁𝗵𝗲 𝗹𝗶𝗻𝗸 𝗯𝗲𝗹𝗼𝘄.
+2️⃣ 𝗧𝘆𝗽𝗲 𝘁𝗵𝗲 𝗻𝗮𝗺𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝗼𝗿 𝘀𝗲𝗿𝗶𝗲𝘀 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁 𝘁𝗼 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱.
+3️⃣ 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗳𝗶𝗹𝗲𝘀 𝘀𝗵𝗮𝗿𝗲𝗱 𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽.
 
-✅ It’s very easy! Just follow these steps and get your movies/series.
+✅ 𝗙𝗼𝗹𝗹𝗼𝘄 𝘁𝗵𝗲𝘀𝗲 𝘀𝘁𝗲𝗽𝘀 𝗮𝗻𝗱 𝗴𝗲𝘁 𝘆𝗼𝘂𝗿 𝗺𝗼𝘃𝗶𝗲𝘀/𝘀𝗲𝗿𝗶𝗲𝘀.
 
-💥 Available in: 480p, 720p, 1080p, Full HD
-🌐 Languages: Hindi, English, Tamil, Telugu, Kannada, Malayalam"""
+💥 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗶𝗻: 480p, 720p, 1080p, Full HD
+🌐 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀: Hindi, English, Tamil, Telugu, Kannada, Malayalam"""
 
         # Inline buttons with updated labels
         buttons = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
+                [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
             ]
         )
 
@@ -79,35 +79,35 @@ async def op(_, m: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/Venom_Stone_Movies_Official"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/IAmVenomStone")
+                        InlineKeyboardButton("🗯 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/Venom_Stone_Movies_Official"),
+                        InlineKeyboardButton("💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url="https://t.me/IAmVenomStone")
                     ],
                     [
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/VenomStoneAutoApproveBot?startgroup")
+                        InlineKeyboardButton("➕ 𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗖𝗵𝗮𝘁 ➕", url="https://t.me/VenomStoneAutoApproveBot?startgroup")
                     ]
                 ]
             )
 
             # Caption text
-            caption_text = """🎬 Want to download any movie or series?
+            caption_text = """🎬 𝗪𝗮𝗻𝘁 𝘁𝗼 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗮𝗻𝘆 𝗺𝗼𝘃𝗶𝗲 𝗼𝗿 𝘀𝗲𝗿𝗶𝗲𝘀?
 
-👉 Steps to download:
+👉 𝗛𝗼𝘄 𝘁𝗼 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱:
 
-1. Click on the group link below and join the group.
-2. Type the name of the movie or series you want to download and send it.
-4. Download the files shared in the group.
+1️⃣ 𝗝𝗼𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽 𝘂𝘀𝗶𝗻𝗴 𝘁𝗵𝗲 𝗹𝗶𝗻𝗸 𝗯𝗲𝗹𝗼𝘄.
+2️⃣ 𝗧𝘆𝗽𝗲 𝘁𝗵𝗲 𝗻𝗮𝗺𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝗼𝗿 𝘀𝗲𝗿𝗶𝗲𝘀 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁 𝘁𝗼 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱.
+3️⃣ 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗳𝗶𝗹𝗲𝘀 𝘀𝗵𝗮𝗿𝗲𝗱 𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽.
 
-✅ It’s very easy! Just follow these steps and get your movies/series.
+✅ 𝗙𝗼𝗹𝗹𝗼𝘄 𝘁𝗵𝗲𝘀𝗲 𝘀𝘁𝗲𝗽𝘀 𝗮𝗻𝗱 𝗴𝗲𝘁 𝘆𝗼𝘂𝗿 𝗺𝗼𝘃𝗶𝗲𝘀/𝘀𝗲𝗿𝗶𝗲𝘀.
 
-💥 Available in: 480p, 720p, 1080p, Full HD
-🌐 Languages: Hindi, English, Tamil, Telugu, Kannada, Malayalam"""
+💥 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗶𝗻: 480p, 720p, 1080p, Full HD
+🌐 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀: Hindi, English, Tamil, Telugu, Kannada, Malayalam"""
 
             # Inline buttons for the group links
             group_buttons = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
+                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
                 ]
             )
 
@@ -123,27 +123,27 @@ async def op(_, m: Message):
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/VenomStoneAutoApproveBot?start=start")
+                        InlineKeyboardButton("💁‍♂️ 𝗦𝘁𝗮𝗿𝘁 𝗺𝗲 𝗽𝗿𝗶𝘃𝗮𝘁𝗲 💁‍♂️", url="https://t.me/VenomStoneAutoApproveBot?start=start")
                     ]
                 ]
             )
             add_group(m.chat.id)
             await m.reply_text(
-                "**🦊 Hello {}!\nwrite me private for more details**".format(m.from_user.first_name),
+                "**🦊 𝗛𝗲𝗹𝗹𝗼 {}!\n𝗪𝗿𝗶𝘁𝗲 𝗺𝗲 𝗽𝗿𝗶𝘃𝗮𝘁𝗲 𝗳𝗼𝗿 𝗺𝗼𝗿𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀**".format(m.from_user.first_name),
                 reply_markup=keyboar
             )
-        print(m.from_user.first_name + " Is started Your Bot!")
+        print(m.from_user.first_name + " 𝗜𝘀 𝘀𝘁𝗮𝗿𝘁𝗲𝗱 𝗬𝗼𝘂𝗿 𝗕𝗼𝘁!")
 
     except UserNotParticipant:
         key = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🍀 Check Again 🍀", "chk")
+                    InlineKeyboardButton("🍀 𝗖𝗵𝗲𝗰𝗸 𝗔𝗴𝗮𝗶𝗻 🍀", "chk")
                 ]
             ]
         )
         await m.reply_text(
-            "**⚠️Access Denied!⚠️\n\nPlease Join @{} to use me.If you joined click check again button to confirm.**".format(cfg.FSUB),
+            "**⚠️ 𝗔𝗰𝗰𝗲𝘀𝘀 𝗗𝗲𝗻𝗶𝗲𝗱! ⚠️\n\n𝗣𝗹𝗲𝗮𝘀𝗲 𝗝𝗼𝗶𝗻 @{} 𝘁𝗼 𝘂𝘀𝗲 𝗺𝗲. 𝗜𝗳 𝘆𝗼𝘂 𝗷𝗼𝗶𝗻𝗲𝗱, 𝗰𝗹𝗶𝗰𝗸 𝗰𝗵𝗲𝗰𝗸 𝗮𝗴𝗮𝗶𝗻 𝗯𝘂𝘁𝘁𝗼𝗻 𝘁𝗼 𝗰𝗼𝗻𝗳𝗶𝗿𝗺.**".format(cfg.FSUB),
             reply_markup=key
         )
 
@@ -161,35 +161,35 @@ async def chk(_, cb: CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/Venom_Stone_Movies_Official"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/IAmVenomStone")
+                        InlineKeyboardButton("🗯 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/Venom_Stone_Movies_Official"),
+                        InlineKeyboardButton("💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁", url="https://t.me/IAmVenomStone")
                     ],
                     [
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/VenomStoneAutoApproveBot?startgroup")
+                        InlineKeyboardButton("➕ 𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗖𝗵𝗮𝘁 ➕", url="https://t.me/VenomStoneAutoApproveBot?startgroup")
                     ]
                 ]
             )
 
             # Caption / explanatory text
-            caption_text = """🎬 Want to download any movie or series?
+            caption_text = """🎬 𝗪𝗮𝗻𝘁 𝘁𝗼 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗮𝗻𝘆 𝗺𝗼𝘃𝗶𝗲 𝗼𝗿 𝘀𝗲𝗿𝗶𝗲𝘀?
 
-👉 Steps to download:
+👉 𝗛𝗼𝘄 𝘁𝗼 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱:
 
-1. Click on the group link below and join the group.
-2. Type the name of the movie or series you want to download and send it.
-4. Download the files shared in the group.
+1️⃣ 𝗝𝗼𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽 𝘂𝘀𝗶𝗻𝗴 𝘁𝗵𝗲 𝗹𝗶𝗻𝗸 𝗯𝗲𝗹𝗼𝘄.
+2️⃣ 𝗧𝘆𝗽𝗲 𝘁𝗵𝗲 𝗻𝗮𝗺𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝗼𝗿 𝘀𝗲𝗿𝗶𝗲𝘀 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁 𝘁𝗼 𝗱𝗼𝘄𝗻𝗹𝗼𝗮𝗱.
+3️⃣ 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗳𝗿𝗼𝗺 𝘁𝗵𝗲 𝗳𝗶𝗹𝗲𝘀 𝘀𝗵𝗮𝗿𝗲𝗱 𝗶𝗻 𝘁𝗵𝗲 𝗴𝗿𝗼𝘂𝗽.
 
-✅ It’s very easy! Just follow these steps and get your movies/series.
+✅ 𝗙𝗼𝗹𝗹𝗼𝘄 𝘁𝗵𝗲𝘀𝗲 𝘀𝘁𝗲𝗽𝘀 𝗮𝗻𝗱 𝗴𝗲𝘁 𝘆𝗼𝘂𝗿 𝗺𝗼𝘃𝗶𝗲𝘀/𝘀𝗲𝗿𝗶𝗲𝘀.
 
-💥 Available in: 480p, 720p, 1080p, Full HD
-🌐 Languages: Hindi, English, Tamil, Telugu, Kannada, Malayalam"""
+💥 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗶𝗻: 480p, 720p, 1080p, Full HD
+🌐 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀: Hindi, English, Tamil, Telugu, Kannada, Malayalam"""
 
             # Inline buttons for the group links
             group_buttons = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
+                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
                 ]
             )
 
@@ -201,29 +201,29 @@ async def chk(_, cb: CallbackQuery):
                 disable_web_page_preview=True
             )
 
-        print(cb.from_user.first_name + " Is started Your Bot!")
+        print(cb.from_user.first_name + " 𝗜𝘀 𝘀𝘁𝗮𝗿𝘁𝗲𝗱 𝗬𝗼𝘂𝗿 𝗕𝗼𝘁!")
     except UserNotParticipant:
-        await cb.answer("🙅‍♂️ You are not joined to channel join and try again. 🙅‍♂️")
+        await cb.answer("🙅‍♂️ 𝗬𝗼𝘂 𝗮𝗿𝗲 𝗻𝗼𝘁 𝗷𝗼𝗶𝗻𝗲𝗱 𝘁𝗼 𝘁𝗵𝗲 𝗰𝗵𝗮𝗻𝗻𝗲𝗹. 𝗝𝗼𝗶𝗻 𝗮𝗻𝗱 𝘁𝗿𝘆 𝗮𝗴𝗮𝗶𝗻! 🙅‍♂️")
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ info ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 @app.on_message(filters.command("users") & filters.user(cfg.SUDO))
-async def dbtool(_, m : Message):
+async def dbtool(_, m: Message):
     xx = all_users()
     x = all_groups()
     tot = int(xx + x)
     await m.reply_text(text=f"""
-🍀 Chats Stats 🍀
-🙋‍♂️ Users : `{xx}`
-👥 Groups : `{x}`
-🚧 Total users & groups : `{tot}` """)
+🍀 𝗖𝗵𝗮𝘁𝘀 𝗦𝘁𝗮𝘁𝘀 🍀
+🙋‍♂️ 𝗨𝘀𝗲𝗿𝘀 : `{xx}`
+👥 𝗚𝗿𝗼𝘂𝗽𝘀 : `{x}`
+🚧 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿𝘀 & 𝗚𝗿𝗼𝘂𝗽𝘀 : `{tot}` """)
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Broadcast ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 @app.on_message(filters.command("bcast") & filters.user(cfg.SUDO))
-async def bcast(_, m : Message):
+async def bcast(_, m: Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ Processing...`")
+    lel = await m.reply_text("`⚡️ 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴...`")
     success = 0
     failed = 0
     deactivated = 0
@@ -231,31 +231,30 @@ async def bcast(_, m : Message):
     for usrs in allusers.find():
         try:
             userid = usrs["user_id"]
-            #print(int(userid))
             if m.command[0] == "bcast":
                 await m.reply_to_message.copy(int(userid))
-            success +=1
+            success += 1
         except FloodWait as ex:
             await asyncio.sleep(ex.value)
             if m.command[0] == "bcast":
                 await m.reply_to_message.copy(int(userid))
         except errors.InputUserDeactivated:
-            deactivated +=1
+            deactivated += 1
             remove_user(userid)
         except errors.UserIsBlocked:
-            blocked +=1
+            blocked += 1
         except Exception as e:
             print(e)
-            failed +=1
+            failed += 1
 
-    await lel.edit(f"✅Successfull to `{success}` users.\n❌ Faild to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.")
+    await lel.edit(f"✅ 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹 𝘁𝗼 `{success}` 𝗨𝘀𝗲𝗿𝘀.\n❌ 𝗙𝗮𝗶𝗹𝗲𝗱 𝘁𝗼 `{failed}` 𝗨𝘀𝗲𝗿𝘀.\n👾 𝗕𝗹𝗼𝗰𝗸𝗲𝗱 : `{blocked}` 𝗨𝘀𝗲𝗿𝘀 \n👻 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲𝗱 : `{deactivated}` 𝗨𝘀𝗲𝗿𝘀.")
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Broadcast Forward ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 @app.on_message(filters.command("fcast") & filters.user(cfg.SUDO))
-async def fcast(_, m : Message):
+async def fcast(_, m: Message):
     allusers = users
-    lel = await m.reply_text("`⚡️ Processing...`")
+    lel = await m.reply_text("`⚡️ 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴...`")
     success = 0
     failed = 0
     deactivated = 0
@@ -263,24 +262,23 @@ async def fcast(_, m : Message):
     for usrs in allusers.find():
         try:
             userid = usrs["user_id"]
-            #print(int(userid))
             if m.command[0] == "fcast":
                 await m.reply_to_message.forward(int(userid))
-            success +=1
+            success += 1
         except FloodWait as ex:
             await asyncio.sleep(ex.value)
             if m.command[0] == "fcast":
                 await m.reply_to_message.forward(int(userid))
         except errors.InputUserDeactivated:
-            deactivated +=1
+            deactivated += 1
             remove_user(userid)
         except errors.UserIsBlocked:
-            blocked +=1
+            blocked += 1
         except Exception as e:
             print(e)
-            failed +=1
+            failed += 1
 
-    await lel.edit(f"✅Successfull to `{success}` users.\n❌ Faild to `{failed}` users.\n👾 Found `{blocked}` Blocked users \n👻 Found `{deactivated}` Deactivated users.")
+    await lel.edit(f"✅ 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹 𝘁𝗼 `{success}` 𝗨𝘀𝗲𝗿𝘀.\n❌ 𝗙𝗮𝗶𝗹𝗲𝗱 𝘁𝗼 `{failed}` 𝗨𝘀𝗲𝗿𝘀.\n👾 𝗕𝗹𝗼𝗰𝗸𝗲𝗱 : `{blocked}` 𝗨𝘀𝗲𝗿𝘀 \n👻 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲𝗱 : `{deactivated}` 𝗨𝘀𝗲𝗿𝘀.")
 
-print("I'm Alive Now!")
+print("🚀 𝗜'𝗺 𝗔𝗹𝗶𝘃𝗲 𝗡𝗼𝘄!")
 app.run()
