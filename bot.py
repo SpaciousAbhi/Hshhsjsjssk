@@ -67,25 +67,59 @@ async def approve(_, m: Message):
  
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Start ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import enums
+
 @app.on_message(filters.command("start"))
-async def op(_, m :Message):
+async def op(_, m: Message):
     try:
         await app.get_chat_member(cfg.CHID, m.from_user.id) 
         if m.chat.type == enums.ChatType.PRIVATE:
+            # Inline keyboard for other links
             keyboard = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton("🗯 Channel", url="https://t.me/Venom_Stone_Movies_Official"),
                         InlineKeyboardButton("💬 Support", url="https://t.me/IAmVenomStone")
-                    ],[
+                    ],
+                    [
                         InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/VenomStoneAutoApproveBot?startgroup")
                     ]
                 ]
             )
+
+            # Caption text
+            caption_text = """🎬 Want to download any movie or series?
+
+👉 Steps to download:
+
+1. Click on the group link below and join the group.
+2. Type the name of the movie or series you want to download and send it.
+4. Download the files shared in the group.
+
+✅ It’s very easy! Just follow these steps and get your movies/series.
+
+💥 Available in: 480p, 720p, 1080p, Full HD
+🌐 Languages: Hindi, English, Tamil, Telugu, Kannada, Malayalam"""
+
+            # Inline buttons for the group links
+            group_buttons = InlineKeyboardMarkup(
+                [
+                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ GROUP LINK ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
+                ]
+            )
+
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/eb119179b4d2a13e71163.jpg", caption="**🎬 Want to download any movie or series?\n\n👉 Steps to download:\n\n1. Click on the group link below and join the group.\n2. Type the name of the movie or series you want to download and send it.\n4. Download the files shared in the group.\n\n✅ It’s very easy! Just follow these steps and get your movies/series.\n\nhttps://t.me/+OXGKooMMA_U0Yjg1\nhttps://t.me/+OXGKooMMA_U0Yjg1\nhttps://t.me/+OXGKooMMA_U0Yjg1\n\n💥 Available in: 480p, 720p, 1080p, Full HD\n🌐 Languages: Hindi, English, Tamil, Telugu, Kannada, Malayalam**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
-    
-        elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
+            # Send photo with caption and inline buttons
+            await m.reply_photo(
+                "https://telegra.ph/file/eb119179b4d2a13e71163.jpg",
+                caption=caption_text,
+                reply_markup=group_buttons
+            )
+
+        elif m.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             keyboar = InlineKeyboardMarkup(
                 [
                     [
@@ -94,8 +128,11 @@ async def op(_, m :Message):
                 ]
             )
             add_group(m.chat.id)
-            await m.reply_text("**🦊 Hello {}!\nwrite me private for more details**".format(m.from_user.first_name), reply_markup=keyboar)
-        print(m.from_user.first_name +" Is started Your Bot!")
+            await m.reply_text(
+                "**🦊 Hello {}!\nwrite me private for more details**".format(m.from_user.first_name),
+                reply_markup=keyboar
+            )
+        print(m.from_user.first_name + " Is started Your Bot!")
 
     except UserNotParticipant:
         key = InlineKeyboardMarkup(
@@ -105,7 +142,10 @@ async def op(_, m :Message):
                 ]
             ]
         )
-        await m.reply_text("**⚠️Access Denied!⚠️\n\nPlease Join @{} to use me.If you joined click check again button to confirm.**".format(cfg.FSUB), reply_markup=key)
+        await m.reply_text(
+            "**⚠️Access Denied!⚠️\n\nPlease Join @{} to use me.If you joined click check again button to confirm.**".format(cfg.FSUB),
+            reply_markup=key
+        )
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ callback ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
