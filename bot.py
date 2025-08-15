@@ -52,9 +52,9 @@ async def approve(_, m: Message):
         # Inline buttons with updated labels
         buttons = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
+                [InlineKeyboardButton("✅ 𝗠𝗢𝗩𝗜𝗘 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                [InlineKeyboardButton("✅ 𝗠𝗢𝗩𝗜𝗘 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                [InlineKeyboardButton("✅ 𝗠𝗢𝗩𝗜𝗘 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
             ]
         )
 
@@ -105,9 +105,9 @@ async def op(_, m: Message):
             # Inline buttons for the group links
             group_buttons = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
+                    [InlineKeyboardButton("✅ 𝗠𝗢𝗩𝗜𝗘 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ 𝗠𝗢𝗩𝗜𝗘 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ 𝗠𝗢𝗩𝗜𝗘 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
                 ]
             )
 
@@ -187,9 +187,9 @@ async def chk(_, cb: CallbackQuery):
             # Inline buttons for the group links
             group_buttons = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
-                    [InlineKeyboardButton("✅ 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
+                    [InlineKeyboardButton("✅ 𝗠𝗢𝗩𝗜𝗘 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ 𝗠𝗢𝗩𝗜𝗘 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")],
+                    [InlineKeyboardButton("✅ 𝗠𝗢𝗩𝗜𝗘 𝗚𝗥𝗢𝗨𝗣 𝗟𝗜𝗡𝗞 ✅", url="https://t.me/+OXGKooMMA_U0Yjg1")]
                 ]
             )
 
